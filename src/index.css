@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cus-navbar {
+  background-color: #c3c19e !important;
+  color: #e6dedc !important;
+}
+
+.cus-navbar .nav-link {
+  color: #5a2717 !important;
+}
+
+.cus-navbar .nav-link:hover {
+  color: #953d24 !important;
+}
+
+/* Smooth button effect */
+.custom-btn {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Optional: smooth fade when page loads */
+#home {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+#shop {
+  transition: background-color 0.5s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#shop .bg-light:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
