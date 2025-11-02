@@ -1,15 +1,16 @@
 import React from 'react';
-import About from './about.tsx';
+import Bar from './navbar.tsx';
+import Shop from './shop.tsx';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-bootstrap';
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
   return (
     <>
     { /* title */ }
-    <section id="home"
+    <section id="about"
         className="d-flex flex-column justify-content-center align-items-center text-center text-white"
         style={{
           backgroundColor: '#6f4e37',
@@ -30,14 +31,14 @@ const Home: React.FC = () => {
 
  <NavLink
   as={Link}
-  to="/shop.tsx"
+  to="/shop"
   className="btn btn-lg px-5 fw-semibold shadow-sm custom-btn d-flex align-items-center gap-2"
 >
   <i className="bi bi-cup-hot"></i> Order Now
 </NavLink>
-</section>
 
-<About/>
+
+    </section>
 
     
 
@@ -45,4 +46,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default About;
