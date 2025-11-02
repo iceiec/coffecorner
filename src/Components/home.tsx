@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './about.tsx';
+import Footer from './footer.tsx';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
       </section>
 
       <About />
+      <Footer />
     </>
   );
 };

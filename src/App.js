@@ -11,6 +11,7 @@ function App() {
     <Router>
       {/* Navbar always visible */}
       <Bar />
+      
 
       {/* Routes define what page to render */}
       <Routes>
