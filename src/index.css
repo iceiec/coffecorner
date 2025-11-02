@@ -16,41 +16,113 @@ html{
   scroll-behavior:smooth;
 }
 
-.cus-navbar {
-  background-color: #c3c19e !important;
-  color: #e6dedc !important;
+.custom-navbar {
+  background: rgba(238, 231, 202, 0.85); /* Slight transparency */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(146, 102, 42, 0.2);
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
 }
 
-.cus-navbar .nav-link {
-  color: #5a2717 !important;
+.navbar-brand-custom {
+  color: #92662a !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
 }
 
-.cus-navbar .nav-link:hover {
-  color: #953d24 !important;
+.nav-item-custom {
+  color: #5b3b1a !important;
+  transition: 0.3s ease !important;
 }
+
+.nav-item-custom:hover {
+  color: #92662a !important;
+}
+
 
 /* Smooth button effect */
-.custom-btn {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b) !important;
+
+.nav-btn {
+  background-color: #92662a !important;
+  color: #eee7ca !important;
+  border-radius: 90px !important;
+  padding: 8px 18px !important;
+  transition: 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.nav-btn:hover {
+  background-color: #b07d3b !important;
+  transform: translateY(-2px) !important;
+  color: #ffffff !important;
+}
+
+.order-btn {
+  background: linear-gradient(135deg, #92662a, #b07d3b) !important;
   color: #fff !important;
   border: none;
-  border-radius: 50px;
-  padding: 12px 28px;
-  transition: all 0.3s ease;
-  height: 30px;
-  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+  border-radius: 50px !important;
+  padding: 12px 30px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(146, 102, 42, 0.3) !important;
 }
 
-.custom-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 126, 95, 0.4);
-  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+.order-btn:hover {
+  transform: translateY(-3px) !important;
+  background: linear-gradient(135deg, #b07d3b, #92662a) !important;
+  box-shadow: 0 8px 20px rgba(146, 102, 42, 0.4) !important;
 }
+
+/* Active link styles */
+/* Active state for the button-style nav */
+
+
+.active-order {
+  background-color: #3b270d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(146, 102, 42, 0.4) !important;
+  text-decoration: none;
+}
+
+
+
+
 
 /* Optional: smooth fade when page loads */
-#home {
-  animation: fadeIn 1s ease-in-out;
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(270deg, #92662a, #c7b78b, #eee7ca);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite, fadeIn 1s ease-in-out;
 }
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-title {
+  color: #fffbea;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+.home-subtitle {
+  color: #fffdf5;
+  font-size: 1.25rem;
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
